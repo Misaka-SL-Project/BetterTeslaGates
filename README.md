@@ -5,8 +5,8 @@ Makes Tesla Gate inactive if holding an item in the list
 ```
 # If the plugin is enabled or not.
   is_enabled: true
-  # Available items that could disable the tesla gate
-  required_keycards:
+ # Available items that could disable the tesla gate
+  required_items:
   - KeycardNTFOfficer
   - KeycardContainmentEngineer
   - KeycardNTFLieutenant

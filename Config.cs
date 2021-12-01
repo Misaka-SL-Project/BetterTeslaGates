@@ -13,7 +13,7 @@ namespace BetterTeslaGates
         [Description("If the plugin is enabled or not.")]
         public bool IsEnabled { get; set; } = true;
         [Description("Available items that could disable the tesla gate")]
-        public List<ItemType> RequiredKeycards { get; set; } = new List<ItemType>()
+        public List<ItemType> RequiredItems { get; set; } = new List<ItemType>()
         {
             ItemType.KeycardNTFOfficer,
             ItemType.KeycardContainmentEngineer,

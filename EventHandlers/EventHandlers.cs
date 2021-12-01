@@ -16,7 +16,7 @@ namespace BetterTeslaGates.EventHandlers
         {
             try
             {
-                if (plugin.Config.RequiredKeycards.Contains(ev.Player.CurrentItem.Type))
+                if (plugin.Config.RequiredItems.Contains(ev.Player.CurrentItem.Type))
                 {
                     ev.IsTriggerable = false;
                 }
