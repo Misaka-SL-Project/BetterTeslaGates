@@ -4,11 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Exiled.API.Interfaces;
+using System.ComponentModel;
 
-namespace TestingPlugin
+namespace BetterTeslaGates
 {
     public class Config : IConfig
     {
-        public bool IsEnabled { get; set; } = true;    
+        [Description("If the plugin is enabled or not.")]
+        public bool IsEnabled { get; set; } = true;
+        [Description("Available keycards that could disable the ")]
+        public List<ItemType> RequiredKeycards { get; set; } = new List<ItemType>()
+        {
+            ItemType.KeycardNTFOfficer,
+            ItemType.KeycardContainmentEngineer,
+            ItemType.KeycardNTFLieutenant,
+            ItemType.KeycardNTFCommander,
+            ItemType.KeycardContainmentEngineer,
+            ItemType.KeycardFacilityManager,
+            ItemType.KeycardO5
+        };
     }
 }
