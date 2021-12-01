@@ -1,2 +1,2 @@
-# TemplatePlugin
-EXILED Plugin template
+# Better Tesla Gates
+EXILED Plugin
