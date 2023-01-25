@@ -14,8 +14,9 @@ namespace BetterTeslaGates
 	    public override string Prefix { get; } = "BetterTeslaGates";
 	    public override Version Version { get; } = new Version(1, 0, 0);
 
+        public override Version RequiredExiledVersion { get; } = new Version(6, 0, 0);
 
-        public EventHandlers.EventHandlers EventHandlers;
+        private EventHandlers.EventHandlers EventHandlers;
         public override void OnEnabled()
         {
             EventHandlers = new EventHandlers.EventHandlers(this);

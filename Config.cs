@@ -12,6 +12,9 @@ namespace BetterTeslaGates
     {
         [Description("If the plugin is enabled or not.")]
         public bool IsEnabled { get; set; } = true;
+
+        public bool Debug { get; set; } = false;
+
         [Description("Available items that could disable the tesla gate")]
         public List<ItemType> RequiredItems { get; set; } = new List<ItemType>()
         {
