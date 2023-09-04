@@ -12,9 +12,9 @@ namespace BetterTeslaGates
     	public override string Author { get; } = "Killla";
 	    public override string Name { get; } = "Better Tesla Gates";
 	    public override string Prefix { get; } = "BetterTeslaGates";
-	    public override Version Version { get; } = new Version(2, 0, 0);
+	    public override Version Version { get; } = new Version(3, 0, 0);
 
-        public override Version RequiredExiledVersion { get; } = new Version(6, 0, 0);
+        public override Version RequiredExiledVersion { get; } = new Version(8, 0, 0);
 
         private EventHandlers.EventHandlers EventHandlers;
         public override void OnEnabled()
