@@ -18,10 +18,10 @@ namespace BetterTeslaGates
         [Description("Available items that could disable the tesla gate")]
         public List<ItemType> RequiredItems { get; set; } = new List<ItemType>()
         {
-            ItemType.KeycardNTFOfficer,
+            ItemType.KeycardMTFPrivate,
             ItemType.KeycardContainmentEngineer,
-            ItemType.KeycardNTFLieutenant,
-            ItemType.KeycardNTFCommander,
+            ItemType.KeycardMTFOperative,
+            ItemType.KeycardMTFCaptain,
             ItemType.KeycardContainmentEngineer,
             ItemType.KeycardFacilityManager,
             ItemType.KeycardO5
